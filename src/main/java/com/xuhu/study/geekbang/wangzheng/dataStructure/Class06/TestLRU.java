@@ -6,16 +6,16 @@ package com.xuhu.study.geekbang.wangzheng.dataStructure.Class06;
  */
 public class TestLRU {
     public static void main(String[] args) {
-        testLRUCache01();
+        testLRUCache01_01();
         System.out.println("\n------------------------\n");
-        testLRUCache02();
+        testLRUCache01_02();
         System.out.println("\n------------------------\n");
-        testLRUCache03();
+        testLRUCache01_03();
         System.out.println("\n------------------------\n");
-        testLRUCache04();
+        testLRUCache01_04();
     }
 
-    public static void testLRUCache01(){
+    public static void testLRUCache01_01(){
         LRUCache01 cache01 = new LRUCache01(5);
         cache01.put(1,11);
         cache01.put(2,12);
@@ -38,7 +38,7 @@ public class TestLRU {
         System.out.println(cache01.get(4));
     }
 
-    public static void testLRUCache02(){
+    public static void testLRUCache01_02(){
         LRUCache01 cache = new LRUCache01( 2 /* 缓存容量 */ );
 
         cache.put(1, 1);
@@ -52,8 +52,7 @@ public class TestLRU {
         System.out.println(cache.get(4));       // 返回  4
     }
 
-
-    public static void testLRUCache03(){
+    public static void testLRUCache01_03(){
         LRUCache01 cache = new LRUCache01( 1 /* 缓存容量 */ );
 
         cache.put(2, 1);
@@ -63,8 +62,7 @@ public class TestLRU {
         System.out.println(cache.get(3));       // 返回 2
     }
 
-
-    public static void testLRUCache04(){
+    public static void testLRUCache01_04(){
         LRUCache01 cache = new LRUCache01( 2 /* 缓存容量 */ );
 
 
