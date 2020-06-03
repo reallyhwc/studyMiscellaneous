@@ -1,7 +1,5 @@
-package com.xuhu.study.geekbang.wangzheng.dataStructure.Class06;
+package com.xuhu.study.geekbang.wangzheng.dataStructure.Class06.LRU;
 
-
-import java.util.List;
 
 /**
  * @author xuhu
