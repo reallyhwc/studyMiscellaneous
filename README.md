@@ -3,6 +3,8 @@
 
  目前包含 极客时间 王争 数据结构与算法之美 的代码样例
  
+ ### Talk is cheap. Show me the code.           -- Linus
+ 
  #### 数据结构与算法之美代码示例
  - [X] 06课 
      - [X] 06课 通过链表实现LRU（LeetCode146题作测试）
@@ -12,7 +14,7 @@
      - [X] 01单链表反转 （LeetCode206）
      - [X] 02链表中环的检测 （LeetCode141）
      - [X] 03两个有序链表合并 （LeetCode21）
-     - [ ] 04删除链表倒数第N个结点 （LeetCode19）
+     - [X] 04删除链表倒数第N个结点 （LeetCode19）
      - [ ] 05求链表的中间结点 （LeetCode876）
      
  - [ ] 08课 
