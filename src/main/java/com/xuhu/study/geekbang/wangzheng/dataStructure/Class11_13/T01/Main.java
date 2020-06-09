@@ -8,6 +8,6 @@ import com.xuhu.study.Utils.ListUtils;
  */
 public class Main {
     public static void main(String[] args) {
-        ListUtils.pringlnArrays(Solution.sort(new int[]{5,2,3,4,2,1,3,4,2}));
+        ListUtils.pringlnArrays(SortBubbleSolution.sort(new int[]{5,2,3,4,2,1,3,4,2}));
     }
 }

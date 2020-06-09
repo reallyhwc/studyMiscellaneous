@@ -5,7 +5,7 @@ package com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T02;
  * @date 2020-06-08 19:52
  * 插入排序
  */
-public class Solution {
+public class SortInsertSolution {
 
     public static int[] sort(int[] arrays){
         if(arrays == null || arrays.length == 0)return arrays;
