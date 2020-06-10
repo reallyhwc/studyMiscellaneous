@@ -9,8 +9,8 @@ import com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T03.SortSelect
  */
 public class TestTime {
 
-    private static int NUM_OF_ARRAY = 10000;
-    private static int LENGTH_OF_ARRAY = 1000;
+    private static int NUM_OF_ARRAY = 100;
+    private static int LENGTH_OF_ARRAY = 100000;
     private static int RANDOM_VALUE = 100000;
 
     public static void main(String[] args) {
