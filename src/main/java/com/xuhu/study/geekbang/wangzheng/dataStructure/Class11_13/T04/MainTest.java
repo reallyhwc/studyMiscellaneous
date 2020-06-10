@@ -18,12 +18,9 @@ public class MainTest {
 
     public static void main(String[] args) {
         long time1 = System.currentTimeMillis();
-        int[][] arrays1 = new int[NUM_OF_ARRAY][LENGTH_OF_ARRAY];
-        int[][] arrays2 = new int[NUM_OF_ARRAY][LENGTH_OF_ARRAY];
-        int[][] arrays3 = new int[NUM_OF_ARRAY][LENGTH_OF_ARRAY];
-        ArraysUtils.randomlyGeneratedIntDoubleArray(arrays1,RANDOM_VALUE);
-        ArraysUtils.randomlyGeneratedIntDoubleArray(arrays2,RANDOM_VALUE);
-        ArraysUtils.randomlyGeneratedIntDoubleArray(arrays3,RANDOM_VALUE);
+        int[][] arrays1 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
+        int[][] arrays2 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
+        int[][] arrays3 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
         long time2 = System.currentTimeMillis();
         long differenceTime1 = time2-time1;
         System.out.println("生成二维数组" + NUM_OF_ARRAY + "*" + LENGTH_OF_ARRAY + "耗时：" + differenceTime1 + "毫秒");

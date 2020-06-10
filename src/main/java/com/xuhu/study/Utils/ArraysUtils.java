@@ -17,4 +17,14 @@ public class ArraysUtils {
             }
         }
     }
+
+    public static int[][] randomlyGeneratedIntDoubleArray(int x, int y, int randomMaxValue){
+        int[][] arrays = new int[x][y];
+        for(int i = 0; i < x; i++){
+            for(int j = 0; j < y; j++){
+                arrays[i][j] = (int) (Math.random()*randomMaxValue);
+            }
+        }
+        return arrays;
+    }
 }
