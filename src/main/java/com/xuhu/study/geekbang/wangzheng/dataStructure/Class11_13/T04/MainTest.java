@@ -23,6 +23,7 @@ public class MainTest {
         int[][] arrays2 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
         int[][] arrays3 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
         int[][] arrays4 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
+        int[][] arrays5 = ArraysUtils.randomlyGeneratedIntDoubleArray(NUM_OF_ARRAY,LENGTH_OF_ARRAY,RANDOM_VALUE);
         long time2 = System.currentTimeMillis();
         long differenceTime1 = time2-time1;
         System.out.println("生成二维数组" + NUM_OF_ARRAY + "*" + LENGTH_OF_ARRAY + "耗时：" + differenceTime1 + "毫秒");
@@ -62,5 +63,14 @@ public class MainTest {
         time2 = System.currentTimeMillis();
         differenceTime1 = time2-time1;
         System.out.println("插入排序结束！总耗时：" + differenceTime1 + "毫秒");
+
+        System.out.println("开始启动快速排序！");
+        time1 = System.currentTimeMillis();
+        for(int i = 0; i < NUM_OF_ARRAY; i++){
+            SortMergeSolution.sort(arrays5[i]);
+        }
+        time2 = System.currentTimeMillis();
+        differenceTime1 = time2-time1;
+        System.out.println("快速排序结束！总耗时：" + differenceTime1 + "毫秒");
     }
 }
