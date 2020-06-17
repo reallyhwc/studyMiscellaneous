@@ -19,7 +19,7 @@ import java.util.Arrays;
 public class TestMain {
 
     private static int NUM_OF_ARRAY = 1;
-    private static int LENGTH_OF_ARRAY = 300000000;
+    private static int LENGTH_OF_ARRAY = 400000000;
     private static int RANDOM_VALUE = 750;
 
     public static void main(String[] args) {
