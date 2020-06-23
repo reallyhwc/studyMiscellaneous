@@ -9,5 +9,6 @@ import com.xuhu.study.Utils.ListUtils;
 public class Main {
     public static void main(String[] args) {
         ListUtils.pringlnArrays(SortFastSolution.sort(new int[]{4,5,6,3,2,1}));
+
     }
 }
