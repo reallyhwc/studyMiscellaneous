@@ -20,6 +20,8 @@ public class FindLastTargetIndex {
             }else {
                 if (mid == length - 1 || nums[mid] < nums[mid+1]){
                     return mid;
+                }else {
+                    begin = mid + 1;
                 }
             }
         }
