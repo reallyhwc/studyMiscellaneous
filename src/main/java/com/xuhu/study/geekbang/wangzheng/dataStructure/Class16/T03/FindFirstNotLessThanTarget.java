@@ -23,6 +23,6 @@ public class FindFirstNotLessThanTarget {
                 }
             }
         }
-        return begin;
+        return -1;
     }
 }
