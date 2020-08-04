@@ -13,13 +13,13 @@ public class FindLastNotLessThanTarget {
         int end = length - 1;
         while (begin <= end) {
             int mid = begin + ((end - begin) >> 1);
-            if (nums[mid] < target){
-                begin = mid+1;
+            if (nums[mid] > target){
+                end = mid - 1;
             }else {
-                if (mid == length-1 || nums[mid+1] > nums[mid]){
+                if (mid == length-1 || nums[mid+1] > target){
                     return mid;
                 }else {
-                    end = mid + 1;
+                    begin = mid + 1;
                 }
             }
         }
