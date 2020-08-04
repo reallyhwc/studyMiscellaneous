@@ -11,11 +11,11 @@ public class FindLastTargetIndex {
         int length = nums.length;
         int begin = 0;
         int end = length - 1;
-        while (begin < end) {
+        while (begin <= end) {
             int mid = begin + ((end - begin) >> 1);
-            if (mid < target){
+            if (nums[mid] < target){
                 begin = mid + 1;
-            }else if (mid > target){
+            }else if (nums[mid] > target){
                 end = mid - 1;
             }else {
                 if (mid == length - 1 || nums[mid] < nums[mid+1]){
