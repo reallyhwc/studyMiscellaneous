@@ -28,6 +28,7 @@ public class Solution {
 
     /**
      * 快速计算卡特兰数
+     * 具体可以后期自己深入了解一下卡特兰数
      * @param n
      * @return
      */
