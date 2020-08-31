@@ -9,6 +9,10 @@ public class MainTest {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
         addTest(tree);
+        System.out.println(tree.searchTreeNode(66));
+        System.out.println(tree.searchTreeNode(73));
+        System.out.println(tree.searchTreeNode(7));
+        System.out.println(tree.searchTreeNode(94));
     }
 
     public static void addTest(BinarySearchTree tree){
