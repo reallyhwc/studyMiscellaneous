@@ -1,5 +1,7 @@
 package com.xuhu.study.geekbang.wangzheng.dataStructure.Class24.T01;
 
+import com.xuhu.study.Utils.TreeOperation;
+
 /**
  * @author xuhu
  * @date 2020-08-31 17:55
@@ -8,11 +10,14 @@ public class MainTest {
 
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
+        // 测试新增
         addTest(tree);
-        System.out.println(tree.searchTreeNode(66));
-        System.out.println(tree.searchTreeNode(73));
-        System.out.println(tree.searchTreeNode(7));
-        System.out.println(tree.searchTreeNode(94));
+        // 测试查找
+        TreeOperation.show(tree.searchTreeNode(66));
+        TreeOperation.show(tree.searchTreeNode(73));
+        TreeOperation.show(tree.searchTreeNode(7));
+        TreeOperation.show(tree.searchTreeNode(94));
+        TreeOperation.show(tree.searchTreeNode(95));
     }
 
     public static void addTest(BinarySearchTree tree){

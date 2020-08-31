@@ -58,26 +58,30 @@ public class BinarySearchTree {
      * @param value
      * @return
      */
-    public boolean searchTreeNode(int value){
+    public TreeNode searchTreeNode(int value){
         TreeNode temp = node;
         while (temp != null) {
             if (temp.val == value){
-                return true;
+                return temp;
             }else if (temp.val > value){
                 if (temp.left != null){
                     temp = temp.left;
                 }else {
-                    return false;
+                    return null;
                 }
             }else {
                 if (temp.right != null){
                     temp = temp.right;
                 }else {
-                    return false;
+                    return null;
                 }
             }
         }
-        return false;
+        return null;
+    }
+
+    public void deleteTreeNode(int value){
+
     }
 
     public void showTree(){
