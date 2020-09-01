@@ -34,6 +34,7 @@ public class MainTest {
         tree.addTreeNode(95);
         tree.addTreeNode(88);
         tree.addTreeNode(94);
+        tree.addTreeNode(75);
         tree.showTree();
     }
 }
