@@ -1,4 +1,4 @@
-package com.xuhu.study.geekbang.wangzheng.dataStructure.Class24.T01;
+package com.xuhu.study.geekbang.wangzheng.dataStructure.Class24.T01_04;
 
 import com.xuhu.study.Utils.TreeOperation;
 
