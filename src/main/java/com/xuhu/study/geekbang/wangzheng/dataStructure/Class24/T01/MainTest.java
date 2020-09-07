@@ -13,11 +13,12 @@ public class MainTest {
         // 测试新增
         addTest(tree);
         // 测试查找
-        TreeOperation.show(tree.searchTreeNode(66));
-        TreeOperation.show(tree.searchTreeNode(73));
-        TreeOperation.show(tree.searchTreeNode(7));
-        TreeOperation.show(tree.searchTreeNode(94));
-        TreeOperation.show(tree.searchTreeNode(95));
+        searchTest(tree);
+        // 测试删除
+        tree.deleteTreeNode(75);
+        tree.showTree();
+        tree.deleteTreeNode(75);
+        tree.showTree();
     }
 
     public static void addTest(BinarySearchTree tree){
@@ -36,5 +37,15 @@ public class MainTest {
         tree.addTreeNode(94);
         tree.addTreeNode(75);
         tree.showTree();
+    }
+
+
+    public static void searchTest(BinarySearchTree tree){
+        // 测试查找
+        TreeOperation.show(tree.searchTreeNode(66));
+        TreeOperation.show(tree.searchTreeNode(73));
+        TreeOperation.show(tree.searchTreeNode(7));
+        TreeOperation.show(tree.searchTreeNode(94));
+        TreeOperation.show(tree.searchTreeNode(95));
     }
 }
