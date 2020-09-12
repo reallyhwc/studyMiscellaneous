@@ -83,6 +83,14 @@ public class BigHeap {
         }
     }
 
+    public void showTreeHeap(){
+        Integer[] integers = new Integer[count];
+        for (int i = 0; i < count; i++) {
+            integers[i] = a[i+1];
+        }
+        TreeOperation.show(TreeUtils.create(integers,0));
+    }
+
     private void swap(int m, int n){
         int temp = a[m];
         a[m] = a[n];
