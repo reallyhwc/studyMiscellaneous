@@ -1,18 +1,47 @@
 package com.xuhu.study.geekbang.wangzheng.dataStructure.SpringFestival.D01.T12;
 
 
-import org.assertj.core.internal.cglib.asm.$Handle;
 
-import java.util.List;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 class Solution {
+
+    /**
+     * 小顶堆思路
+     * 整体上来看，还是分治后合并速度较快，维护一个小顶堆也需要消耗性能
+     * @param lists list
+     * @return node
+     */
+    public ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<ListNode> minHeap = new PriorityQueue<>(Comparator.comparingInt(node -> node.val));
+        for (int i = 0; i < lists.length; i++){
+            if (lists[i] != null){
+                minHeap.add(lists[i]);
+            }
+        }
+        ListNode ans = new ListNode(-1);
+        ListNode node = ans;
+        while (!minHeap.isEmpty()){
+            ListNode target = minHeap.poll();
+            ListNode next = target.next;
+            ListNode temp = new ListNode(target.val);
+            temp.next = null;
+            node.next = temp;
+            node = node.next;
+            if (next != null){
+                minHeap.add(next);
+            }
+        }
+        return ans.next;
+    }
 
     /**
      * 分治思路，每次合并两个，直到最后只剩一个
      * @param lists list
      * @return node
      */
-    public ListNode mergeKLists(ListNode[] lists) {
+    public ListNode mergeKLists02(ListNode[] lists) {
         if (lists.length == 0) {
             return null;
         }
