@@ -16,26 +16,26 @@ public class QuickSort implements Sort {
 
     private void quickSort(int[] array, int begin, int end){
         if (begin < end){
-            int partIndex = partition(array, begin, end);
-            quickSort(array, begin, partIndex - 1);
-            quickSort(array, partIndex + 1, end);
+            int partition = partition(array, begin, end);
+            quickSort(array, begin, partition - 1);
+            quickSort(array, partition + 1, end);
         }
     }
 
     private int partition(int[] array, int begin, int end) {
         int targetNum = array[end];
         int i = begin;
-        for (int j = begin; j < end; j++) {
+        for (int j = begin; j < end; j++){
             if (array[j] < targetNum){
-                swap(array,i,j);
+                swap (array,i,j);
                 i++;
             }
         }
-        swap(array,i,end);
+        swap(array, i,end);
         return i;
     }
 
-    private void swap(int[] array, int begin, int end){
+    private void swap(int[] array, int begin, int end) {
         int temp = array[begin];
         array[begin] = array[end];
         array[end] = temp;
