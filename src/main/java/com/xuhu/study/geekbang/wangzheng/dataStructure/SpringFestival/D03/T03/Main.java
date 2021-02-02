@@ -10,7 +10,7 @@ import com.xuhu.study.geekbang.wangzheng.dataStructure.SpringFestival.D03.Sort;
 public class Main {
 
     public static void main(String[] args) {
-        Sort sort = null;
+        Sort sort = new InsertSort();
         ListUtils.pringlnArrays(sort.sort(new int[]{9,8,7,6,5,4,3,2,1}));
         System.out.println("/n-----------------------");
         ListUtils.pringlnArrays(sort.sort(new int[]{}));
