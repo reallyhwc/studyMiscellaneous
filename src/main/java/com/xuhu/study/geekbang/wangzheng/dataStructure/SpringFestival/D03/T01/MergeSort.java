@@ -43,10 +43,7 @@ public class MergeSort implements Sort {
                     right++;
                 }
             }
-            for (int i = 0; i < size; i++) {
-                array[begin + i] = temp[i];
-            }
-            return;
+            System.arraycopy(temp, 0, array, begin, size);
         }
     }
 }
