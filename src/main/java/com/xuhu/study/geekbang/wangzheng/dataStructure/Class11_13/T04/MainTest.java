@@ -5,6 +5,7 @@ import com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T01.SortBubble
 import com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T02.SortInsertSolution;
 import com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T03.SortSelectSolution;
 import com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T05.SortMergeSolution;
+import com.xuhu.study.geekbang.wangzheng.dataStructure.Class11_13.T06.SortFastSolution;
 
 /**
  * @author xuhu
@@ -55,19 +56,19 @@ public class MainTest {
         differenceTime1 = time2-time1;
         System.out.println("选择排序结束！总耗时：" + differenceTime1 + "毫秒");
 
-        System.out.println("开始启动插入排序！");
+        System.out.println("开始启动归并排序！");
         time1 = System.currentTimeMillis();
         for(int i = 0; i < NUM_OF_ARRAY; i++){
             SortMergeSolution.sort(arrays4[i]);
         }
         time2 = System.currentTimeMillis();
         differenceTime1 = time2-time1;
-        System.out.println("插入排序结束！总耗时：" + differenceTime1 + "毫秒");
+        System.out.println("归并排序结束！总耗时：" + differenceTime1 + "毫秒");
 
         System.out.println("开始启动快速排序！");
         time1 = System.currentTimeMillis();
         for(int i = 0; i < NUM_OF_ARRAY; i++){
-            SortMergeSolution.sort(arrays5[i]);
+            SortFastSolution.sort(arrays5[i]);
         }
         time2 = System.currentTimeMillis();
         differenceTime1 = time2-time1;
